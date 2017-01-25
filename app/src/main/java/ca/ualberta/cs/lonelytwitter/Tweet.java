@@ -53,4 +53,9 @@ public abstract class Tweet implements Tweetable{ //Abstract classes cannot be i
     public ArrayList<Mood> getMood(){
         return this.moodList;
     }
+
+    @Override
+    public String toString(){
+        return date.toString() + " | " + message;
+    }
 }
