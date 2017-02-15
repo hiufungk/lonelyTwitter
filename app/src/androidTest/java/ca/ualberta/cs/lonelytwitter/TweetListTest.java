@@ -55,8 +55,8 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         TweetList tweets = new TweetList();
         Tweet tweet = new NormalTweet("test tweet");
         try {
-            tweets.add(tweet);
-            tweets.add(tweet);
+            tweets.addTweet(tweet);
+            tweets.addTweet(tweet);
             assertTrue(false);
         }catch (IllegalArgumentException e){
             assertTrue(true);
